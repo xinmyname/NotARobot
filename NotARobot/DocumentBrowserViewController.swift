@@ -38,7 +38,7 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
             .appendingPathExtension("norobo")
 
         do {
-            try "Robot: Hello robot!".write(to: newDocumentURL, atomically: true, encoding: .utf8)
+            try "Robot: Are you a robot?".write(to: newDocumentURL, atomically: true, encoding: .utf8)
             importHandler(newDocumentURL, .move)
         } catch {
             importHandler(nil, .move)
